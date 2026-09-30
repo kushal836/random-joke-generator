@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Joke Generator</title>
+    <meta
+      name="description"
+      content="Get a random joke from an external API with category filters and sharing options."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <div class="card">
+        <div class="badge">JOKE API</div>
+        <h1>Random Joke Generator</h1>
+
+        <div class="controls">
+          <label for="categorySelect">Category</label>
+          <select id="categorySelect">
+            <option value="Any">Any</option>
+            <option value="Programming">Programming</option>
+            <option value="Misc">Misc</option>
+            <option value="Dark">Dark</option>
+            <option value="Pun">Pun</option>
+            <option value="Spooky">Spooky</option>
+            <option value="Christmas">Christmas</option>
+          </select>
+        </div>
+
+        <button id="jokeBtn" class="primary-btn">Get a joke</button>
+
+        <div class="joke-box" id="jokeBox">
+          <p id="jokeText">Press the button to generate a laugh.</p>
+        </div>
+
+        <div class="actions">
+          <button id="copyBtn" class="secondary-btn">Copy</button>
+          <button id="shareBtn" class="secondary-btn">Share</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
